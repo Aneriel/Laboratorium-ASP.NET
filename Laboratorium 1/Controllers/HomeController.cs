@@ -40,16 +40,16 @@ namespace Laboratorium_1.Controllers
                     ViewBag.op =$"Wynik dodawania {a} + {b} = {a + b}";
                     break;
                 case Operators.SUB:
-                    ViewBag.op = b - a;
+                    ViewBag.op = $"Wynik odejmowania {a} - {b} = {a-b}";
                     break;
                 case Operators.MUL:
-                    ViewBag.op = a * b;
+                    ViewBag.op = $"Wynik mnożenia {a} * {b} = {a * b}";
                     break;
                 case Operators.DIV:
-                    ViewBag.op = a / b;
+                    ViewBag.op = $"Wynik dzielenia {a} / {b} = {a / b}";
                     break;
                 case Operators.POW:
-                    ViewBag.op = Math.Pow(a.Value,b.Value);
+                    ViewBag.op = $"Wynik Potęgowania {a} ^ {b} = {Math.Pow(a.Value,b.Value)}";
                     break;
                 case Operators.UNKNOWN:
                     return View("Error");
