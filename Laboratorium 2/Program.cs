@@ -1,3 +1,5 @@
+using Microsoft.AspNetCore.Hosting;
+
 namespace Laboratorium_2
 {
     public class Program
@@ -31,6 +33,7 @@ namespace Laboratorium_2
                 pattern: "{controller=Home}/{action=Index}/{id?}");
 
             app.Run();
+            
         }
     }
 }
